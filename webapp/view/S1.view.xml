@@ -17,7 +17,21 @@
 						</firstStatus>
 						 
 						<secondStatus>
-							<ObjectStatus text="Volume" />
+							<ObjectStatus text="{
+							parts:
+							[
+								{
+									path:'DimensionHeight'
+								},
+								{
+									path:'DimensionWidth'
+								},
+								{
+									path:'DimensionDepth'
+								}								
+							],
+							formatter: '.meuFormatador.calculateVolume'
+							}" />
 						</secondStatus>
 
 					</ObjectListItem>
